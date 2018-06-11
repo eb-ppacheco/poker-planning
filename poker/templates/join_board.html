@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Join the board {{ board.name }}
+{% endblock %}
+{% block content %}
+	<h1> Planning Poker</h1>
+	<h4> Join the board {{board.name}}</h4>
+	<form method="post" action="join_as">
+		<span id="nick" style="width:100px">Name</span>
+		<input type="text" name="name" id="name" class="form-control" value="{{ nick }}">
+		<br>
+		<br>
+		<input type="button" value="Join">
+	</form>
+</div>
